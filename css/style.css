@@ -38,8 +38,7 @@ a:hover {
 }
 
 a:active {
-  position: relative;
-  top: 2px;
+  -webkit-transform: scale(0.97);
 }
 
 li a span {

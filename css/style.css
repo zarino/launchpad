@@ -37,6 +37,11 @@ a:hover {
   -webkit-transform: scale(1.03);
 }
 
+a:active {
+  position: relative;
+  top: 2px;
+}
+
 li a span {
   display: block;
   margin-top: 5px;

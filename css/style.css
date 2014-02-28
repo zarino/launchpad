@@ -22,11 +22,11 @@ li {
   width: 100%;
   list-style: none;
   padding: 0;
+  margin-bottom: 40px;
 }
 
 a {
   display: block;
-  height: 200px;
   text-align: center;
   color: #000;
 }

@@ -7,7 +7,14 @@ var showType = function(type){
 $(function(){
 
   chrome.storage.sync.get('show', function(data){
-    showType(data.show)
+    if('show' in data){
+      showType(data.show)
+    } else {
+      type = 'play'
+      chrome.storage.sync.set({'show': type}, function() {
+        showType(type)
+      })
+    }
   })
 
   $('p span').on('click', function(){

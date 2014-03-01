@@ -1,5 +1,5 @@
 body {
-  padding: 100px;
+  padding: 50px;
   font-size: 16px;
 }
 
@@ -46,25 +46,43 @@ li a span {
   margin-top: 5px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   li {
     width: 50%;
   }
 }
 
+@media only screen and (min-width: 600px) {
+  body {
+    padding: 60px;
+  }
+  li {
+    width: 33.33333333%;
+  }
+}
+
 @media only screen and (min-width: 800px) {
+  body {
+    padding: 70px;
+  }
   li {
     width: 33.33333333%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
+  body {
+    padding: 80px;
+  }
   li {
     width: 25%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  body {
+    padding: 100px;
+  }
   li {
     width: 20%;
   }

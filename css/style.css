@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 40px 50px 50px 50px;
   font-size: 16px;
 }
 
@@ -46,6 +46,28 @@ li a span {
   margin-top: 5px;
 }
 
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+p span {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+p span:hover {
+  color: #999;
+}
+
+p span.active {
+  color: #000;
+  cursor: default;
+}
+
 @media only screen and (min-width: 500px) {
   li {
     width: 50%;
@@ -54,7 +76,7 @@ li a span {
 
 @media only screen and (min-width: 600px) {
   body {
-    padding: 60px;
+    padding: 40px 60px 60px 60px;
   }
   li {
     width: 33.33333333%;
@@ -63,16 +85,19 @@ li a span {
 
 @media only screen and (min-width: 800px) {
   body {
-    padding: 70px;
+    padding: 40px 70px 70px 70px;
   }
   li {
     width: 33.33333333%;
+  }
+  p {
+    margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   body {
-    padding: 80px;
+    padding: 45px 80px 80px 80px;
   }
   li {
     width: 25%;
@@ -81,10 +106,13 @@ li a span {
 
 @media only screen and (min-width: 1200px) {
   body {
-    padding: 100px;
+    padding: 50px 100px 100px 100px;
   }
   li {
     width: 20%;
+  }
+  p {
+    margin-bottom: 40px;
   }
 }
 

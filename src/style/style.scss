@@ -59,14 +59,8 @@ body {
     }
 
     .icon {
-        display: block;
-        width: 8em;
-        height: 8em;
-        margin: 0 auto 1em auto;
-    }
-
-    .icon--placeholder {
         $iconScaleFactor: 3;
+        display: block;
         margin: 0 auto (1em / $iconScaleFactor) auto;
         font-size: (1em * $iconScaleFactor);
         text-align: center;
@@ -74,8 +68,17 @@ body {
         width: (8em / $iconScaleFactor);
         height: (8em / $iconScaleFactor);
         border-radius: (0.5em / $iconScaleFactor);
-        background-color: #ddd;
+        background-size: 100% 100%;
+    }
+
+    .icon--placeholder {
+        background-color: #CFD8DC;
         color: #fff;
+    }
+
+    .icon--replace {
+        background: #BBDEFB;
+        box-shadow: 0 0 0 0.1em #2196F3;
     }
 }
 

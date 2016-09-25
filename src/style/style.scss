@@ -50,6 +50,11 @@ body {
         width: 20%;
     }
 
+    @media(min-height: 700px){
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
     &:hover {
         -webkit-transform: scale(1.03);
     }
@@ -64,10 +69,11 @@ body {
         margin: 0 auto (1em / $iconScaleFactor) auto;
         font-size: (1em * $iconScaleFactor);
         text-align: center;
-        line-height: (8em / $iconScaleFactor);
-        width: (8em / $iconScaleFactor);
-        height: (8em / $iconScaleFactor);
+        line-height: (6em / $iconScaleFactor);
+        width: (6em / $iconScaleFactor);
+        height: (6em / $iconScaleFactor);
         border-radius: (0.5em / $iconScaleFactor);
+        background: transparent none 0 0 no-repeat;
         background-size: 100% 100%;
     }
 
@@ -77,7 +83,7 @@ body {
     }
 
     .icon--replace {
-        background: #BBDEFB;
+        background-color: #BBDEFB;
         box-shadow: 0 0 0 0.1em #2196F3;
     }
 }

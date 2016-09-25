@@ -28,7 +28,7 @@ var createIconForSite = function createIconForSite(site, cb){
         var $icon = $('<span>').addClass('icon');
 
         if(typeof dataURI !== 'undefined'){
-            $icon.css('background', 'transparent url(' + dataURI + ') no-repeat 0 0')
+            $icon.css('background-image', 'url(' + dataURI + ')')
         } else {
             $icon.addClass('icon--placeholder')
                 .text(site.title.substr(0,1).toUpperCase());

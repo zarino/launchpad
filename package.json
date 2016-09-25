@@ -1,0 +1,19 @@
+{
+  "author": "Zarino Zappia",
+  "name": "subscribe-with-feedbin",
+  "description": "Auto-detect and subscribe to RSS feeds with Feedbin",
+  "version": "2.0.0",
+  "homepage": "http://github.com/zarino/subscribe-with-feedbin",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zarino/subscribe-with-feedbin.git"
+  },
+  "scripts": {
+    "build": "./script/build.sh",
+    "version": "./script/version.js"
+  },
+  "dependencies": {
+    "crx": "3.0.3",
+    "node-sass": "^3.10.0"
+  }
+}

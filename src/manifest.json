@@ -13,5 +13,10 @@
   "permissions": [
     "bookmarks",
     "storage"
-  ]
+  ],
+  "applications": {
+    "gecko": {
+      "id": "launchpad@zarino.co.uk"
+    }
+  }
 }

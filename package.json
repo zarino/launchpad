@@ -1,12 +1,12 @@
 {
   "author": "Zarino Zappia",
-  "name": "subscribe-with-feedbin",
-  "description": "Auto-detect and subscribe to RSS feeds with Feedbin",
+  "name": "launchpad",
+  "description": "Rocking the new tab page like it’s 2013",
   "version": "2.0.0",
-  "homepage": "http://github.com/zarino/subscribe-with-feedbin",
+  "homepage": "http://github.com/zarino/launchpad",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zarino/subscribe-with-feedbin.git"
+    "url": "git://github.com/zarino/launchpad.git"
   },
   "scripts": {
     "build": "./script/build.sh",

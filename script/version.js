@@ -21,4 +21,5 @@ var updateVersionInFile = function updateVersionInFile(filePath, versionNumber){
 }
 
 updateVersionInFile('./src-chrome/manifest.json', versionNumber);
+updateVersionInFile('./src-firefox/manifest.json', versionNumber);
 updateVersionInFile('./package.json', versionNumber);

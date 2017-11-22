@@ -1,12 +1,14 @@
 # Launchpad
 
-Rocking the Chrome new tab page like it’s 2013.
+Rocking the Chrome and Firefox new tab pages like it’s 2013.
 
-## How to install this Chrome extension
+## How to install this extension
 
-Download a copy of the `subscribe-with-feedbin.crx` file, from inside the `dist` directory. Drag and drop the `subscribe-with-feedbin.crx` file onto the `chrome://extensions` window.
+**Chrome:** Download a copy of the `launchpad-chrome.crx` file from inside the `dist` directory, and drag and drop it onto the `chrome://extensions` window.
 
-## How to use this Chrome extension
+**Firefox:** Download a copy of the `launchpad-firefox.xpi` file from inside the `dist` directory, and drag and drop it onto an open Firefox window.
+
+## How to use this extension
 
 On first run, the extension will search for a “Launchpad” bookmarks folder, at the top level of the Bookmarks tree. If one is found, the child nodes are rendered as icons on the Launchpad. If no “Launchpad” bookmarks folder is found, an empty one is created. Just add your bookmarks to this folder, and they’ll appear on the Launchpad.
 
@@ -17,21 +19,28 @@ To add an icon for a bookmark in Launchpad, drag an image file from your desktop
 Make your changes, then increment the version number, substituting the number after `--` with the new version you want to change to:
 
     npm install
-    npm run version -- 0.1.2
+    npm run version -- 2.0.1
 
-Then, with the new version number in place, build the `.crx` and `.zip` packages:
+Then, with the new version number in place, build the `.crx`, `.xpi`, and `.zip` packages:
 
     npm run build
 
-You can place an SSL Private Key at `key.pm` in the repo root directory, or you can let the build script create one for you.
+`crx` will sign the Chrome Extension (`launchpad-chrome.crx`) with the SSL Private Key at `./key.pm` in the repo root directory. If no `key.pm` is found, one will be created for you.
 
-You will probably want to commit that change and create a new git tag to match the version number:
+`web-ext` will sign the Firefox Extension (`launchpad-firefox.xpi`) with the Adobe Add-ons Developer Hub credentials at `./jwt-issuer.txt` and `./jwt-secret.txt`, and also add it to your Developer Hub Profile. If you haven’t already, you’ll need to [sign up for a Mozilla Developer account](https://addons.mozilla.org/en-US/developers/addon/api/key/) and paste your “JWT issuer” and “JWT secret” credentials into those two text files, so `web-ext` can find them.
+
+Build will create 4 files in `dist/`:
+
+* `launchpad-chrome.crx` – for installing manually into Chrome
+* `launchpad-chrome.zip` – for uploading to the Chrome Developer Dashboard
+* `launchpad-firefox.xpi` – for installing manually into Firefox
+* `launchpad-firefox.zip` – for uploading to the Firefox Add-on Developer Hub
+
+You’ll probably want to commit these files to the repo and create a new git tag to match the version number:
 
     git commit -a
-    git tag -a v0.1.2
+    git tag -a v2.0.1
     git push --tags
-
-The `.crx` package can be installed directly into Chrome. The `.zip` package can be uploaded to your Chrome Web Store Developer Dashboard.
 
 ## How to recompile the Sass styles during development
 

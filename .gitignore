@@ -1,6 +1,9 @@
 node_modules
 key.pem
+jwt-issuer.txt
+jwt-secret.txt
 artwork
 .sass-cache
 *.css
 *.css.map
+src-firefox/.web-extension-id

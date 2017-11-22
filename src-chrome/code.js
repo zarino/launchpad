@@ -1,14 +1,15 @@
 var launchpadFolderName = 'Launchpad';
+var launchpadFolderParentId = '1';
 
 var getLaunchpadSites = function getLaunchpadSites(cb){
-    chrome.bookmarks.getChildren('1', function(results){
+    chrome.bookmarks.getChildren(launchpadFolderParentId, function(results){
         var launchPadFolder = results.find(function(result){
             return result.title === launchpadFolderName;
         });
 
         if(typeof launchPadFolder === 'undefined'){
             chrome.bookmarks.create({
-                parentId: "1",
+                parentId: launchpadFolderParentId,
                 title: launchpadFolderName
             });
             return cb([]);

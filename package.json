@@ -13,7 +13,7 @@
     "version": "./script/version.js"
   },
   "dependencies": {
-    "crx": "3.0.3",
-    "node-sass": "^3.10.0"
+    "crx": ">=3.0.0",
+    "node-sass": ">=4.0.0"
   }
 }

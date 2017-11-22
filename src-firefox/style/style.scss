@@ -1,0 +1,100 @@
+@import 'normalize';
+@import 'mixins';
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    @include clearfix();
+    padding: 1em;
+    font-size: 16px;
+    line-height: 1.4;
+
+    @media(min-width: 40em){
+        padding: 2em;
+    }
+
+    @media(min-width: 60em){
+        padding: 3em;
+    }
+
+    @media(min-width: 70em){
+        padding: 4em;
+    }
+}
+
+.site {
+    float: left;
+    display: block;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+
+    color: inherit;
+    text-decoration: none;
+
+    @media(min-width: 40em){
+        width: 33%;
+    }
+
+    @media(min-width: 60em){
+        width: 25%;
+    }
+
+    @media(min-width: 70em){
+        width: 20%;
+    }
+
+    @media(min-height: 700px){
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    &:hover {
+        -webkit-transform: scale(1.03);
+    }
+
+    &:active {
+        -webkit-transform: scale(0.97);
+    }
+
+    .icon {
+        $iconScaleFactor: 3;
+        display: block;
+        margin: 0 auto (1em / $iconScaleFactor) auto;
+        font-size: (1em * $iconScaleFactor);
+        text-align: center;
+        line-height: (6em / $iconScaleFactor);
+        width: (6em / $iconScaleFactor);
+        height: (6em / $iconScaleFactor);
+        border-radius: (0.5em / $iconScaleFactor);
+        background: transparent none 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .icon--placeholder {
+        background-color: #CFD8DC;
+        color: #fff;
+    }
+
+    .icon--replace {
+        background-color: #BBDEFB;
+        box-shadow: 0 0 0 0.1em #2196F3;
+    }
+}
+
+.hint {
+    margin: 0;
+    text-align: center;
+    color: #666;
+
+    a {
+        display: block;
+        margin-top: 1em;
+    }
+}

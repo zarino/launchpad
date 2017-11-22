@@ -41,9 +41,9 @@ The build script can handle this for you. Just run it as normal, and as well as 
 
 If you would prefer to have it watch for changes, and compile the Sass in the background as you edit it, then run `node-sass` directly:
 
-    ./node_modules/node-sass/bin/node-sass -w src/style/style.scss src/style.css
+    ./node_modules/node-sass/bin/node-sass -w src-chrome/style/style.scss src-chrome/style.css
 
 Or just run Sass using your machine’s own binary, for example:
 
-    sass --watch src/style:src
+    sass --watch src-chrome/style:src-chrome
 

@@ -1,8 +1,8 @@
 {
   "name": "Launchpad",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "manifest_version": 2,
-  "description": "Rocking the Firefox new tab page like it’s 2013 Chrome",
+  "description": "Display a grid of bookmarks with customisable icons on your new tab page",
   "homepage_url": "http://github.com/zarino/launchpad",
   "icons": {
     "128": "icons/icon.png"

@@ -27,7 +27,7 @@ Then, with the new version number in place, build the `.crx`, `.xpi`, and `.zip`
 
 `crx` will sign the Chrome Extension (`launchpad-chrome.crx`) with the SSL Private Key at `./key.pm` in the repo root directory. If no `key.pm` is found, one will be created for you.
 
-`web-ext` will sign the Firefox Extension (`launchpad-firefox.xpi`) with the Adobe Add-ons Developer Hub credentials at `./jwt-issuer.txt` and `./jwt-secret.txt`, and also add it to your Developer Hub Profile. If you haven’t already, you’ll need to [sign up for a Mozilla Developer account](https://addons.mozilla.org/en-US/developers/addon/api/key/) and paste your “JWT issuer” and “JWT secret” credentials into those two text files, so `web-ext` can find them.
+`web-ext` will sign the Firefox Extension (`launchpad-firefox.xpi`) with the Mozilla Add-ons Developer Hub credentials at `./jwt-issuer.txt` and `./jwt-secret.txt`, and also add it to your Developer Hub Profile. If you haven’t already, you’ll need to [sign up for a Mozilla Developer account](https://addons.mozilla.org/en-US/developers/addon/api/key/) and paste your “JWT issuer” and “JWT secret” credentials into those two text files, so `web-ext` can find them.
 
 Build will create 4 files in `dist/`:
 
